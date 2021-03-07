@@ -5,8 +5,8 @@ fun main() {
     salarios.forEach { println(it) }
 
     println("------------------")
-    println("Maior Salario: ${salarios.max()}")
-    println("Menor Salario: ${salarios.min()}")
+    println("Maior Salario: ${salarios.maxOrNull()}")
+    println("Menor Salario: ${salarios.minOrNull()}")
     println("Media Salarial: ${salarios.average()}")
 
 
