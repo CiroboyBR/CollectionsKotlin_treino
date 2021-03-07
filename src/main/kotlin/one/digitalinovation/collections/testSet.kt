@@ -11,7 +11,11 @@ fun main() {
     val funcionariosTodos = funcionariosMasculinos.union(funcionariosFemininos)
     funcionariosTodos.forEach { println(it) }
 
-    println("Subtract --------------------------")
+    println("subtract --------------------------")
     val funcionariosSubtraidos = funcionariosTodos.subtract(funcionariosFemininos)
     funcionariosSubtraidos.forEach { println(it) }
+
+    println("intersect --------------------------")
+    val uniao = funcionariosTodos.intersect(funcionariosFemininos)
+    uniao.forEach { println(it) }
 }
